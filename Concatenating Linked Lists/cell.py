@@ -8,6 +8,23 @@
 
 import sys
 
+class List:
+
+	def __init__(self, head, tail=None):
+		self.head = head
+		if tail == None:
+			self.tail = head
+		else:
+			self.tail = tail
+		self.next = head.next
+		self.data = head.data
+    
+	def add (self, data):
+		self.tail.next = Cell(data)
+		self.tail = self.tail.next
+
+# THIS REMAINING CODE BELOW WAS PROVIDED FOR THIS ASSIGNMENT BY KURT SCHMIDT
+# NOT MADE BY DAVID MILLER
 class Cell:
 	"""Just a little wrapper for a cons cell, a node in a singly-linked list,
 	essentially, a 2-tuple:
@@ -26,22 +43,6 @@ class Cell:
 
 	def echo( self ):
 		print( self.__str__() )
-
-class List:
-
-	def __init__(self, head, tail=None):
-		self.head = head
-		if tail == None:
-			self.tail = head
-		else:
-			self.tail = tail
-		self.next = head.next
-		self.data = head.data
-    
-	def add (self, data):
-		self.tail.next = Cell(data)
-		self.tail = self.tail.next
-
 
 def list2string( L ) :
 	

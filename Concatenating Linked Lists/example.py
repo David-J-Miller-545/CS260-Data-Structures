@@ -4,6 +4,9 @@
 #
 # 1/07
 #
+# THIS FILE WAS PROVIDED FOR THIS ASSIGNMENT BY KURT SCHMIDT
+# NOT MADE BY DAVID MILLER
+
 import random
 import timeit
 
