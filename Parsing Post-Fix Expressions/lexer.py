@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# THIS FILE WAS PROVIDED FOR ASSIGNMENT BY KURT SCHMIDT
+# NOT MADE BY DAVID MILLER
 
 expression = ''
 operators = '*/+-()'	# valid operators
